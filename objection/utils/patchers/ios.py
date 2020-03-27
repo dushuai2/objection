@@ -280,9 +280,9 @@ class IosPatcher(BasePlatformPatcher):
             ipa.close()
 
         # check what is in the Payload directory
-        self.payload_directory = os.listdir(os.path.join(self.temp_directory, 'Payload'))
-        if len(self.payload_directory) > 1:
-            click.secho('Warning: Payload folder has more than one file, this is unexpected.', fg='yellow')
+        #self.payload_directory = os.listdir(os.path.join(self.temp_directory, 'Payload'))
+        #if len(self.payload_directory) > 1:
+        #    click.secho('Warning: Payload folder has more than one file, this is unexpected.', fg='yellow')
 
         # get the folder that ends with .app. This is where we will be patching
         # the executable with FridaGadget
